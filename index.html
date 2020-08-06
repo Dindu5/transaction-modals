@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/publisher-modal.css">
+</head>
+
+<body>
+    <!-- ---------------------------------------------------------------------------
+        Button trigger for the publisher details modal {Add this to the view button}
+        data-toggle="modal" data-target="#pub_detail_modal"
+        Then copy the Publisher details code
+    ----------------------------------------------------------------------------- -->
+    <div class="d-flex">
+        <button type="button" class="btn btn-outline-primary mx-auto my-5" data-toggle="modal"
+            data-target="#pub_detail_modal">
+            Launch Transaction Modal
+        </button>
+    </div>
+
+    <h6 class="text-center">When you lauch the modal, click on reset password for reset password modal</h6>
+    <!-- --------------------------------------
+        Publisher Details Modal Starts Here
+    --------------------------------------- -->
+    <div class="modal fade" id="pub_detail_modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close ml-auto mt-2 mr-3" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <!-- ---------------------------------
+                        Publisher Details 
+                    ---------------------------------- -->
+                    <div class="publisher_details_card">
+                        <div class="card-body">
+                            <div class="publisher_details pb-3">
+                                <div
+                                    class="detail_top d-flex justify-content-between mb-lg-3 mb-md-4 mb-sm-4 mb-3 align-items-center">
+                                    <h2>View Publisher</h2>
+                                    <button class=" btn no_outlinebtn">Delete
+                                        <span class="w-75"><img src="assets/images/pub_deleteimg.png" alt=""></span>
+                                    </button>
+                                </div>
+                                <div class="detail_middle d-flex">
+                                    <form class="box m-1" id="img_upload">
+                                        <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" />
+                                        <label for="file-1" class="text-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="20" height="17" viewBox="0 0 20 17">
+                                                <path
+                                                    d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                                            </svg> <span>Upload Image</span></label>
+                                        <div class="imagediv">
+                                        </div>
+                                    </form>
+                                    <div class="pub_details d-flex flex-column m-1 ml-3">
+                                        <div
+                                            class="title_div d-flex align-items-center pb-xl-3 pb-lg-3 pb-md-2 pb-sm-2 pb-2 pub_spaced">
+                                            <h3 class="pub_name">Cocacola</h3>
+                                            <a href="" class="ml-4 edit_links"><span><img
+                                                        src="assets/images/pub_link_edit.png" alt=""></span> Edit</a>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div
+                                                class="d-flex justify-content-between mt-xl-3 mt-lg-2 mt-md-3 mt-sm-3 mt-3">
+                                                <div class="d-flex">
+                                                    <p class="pub_headings">Date Added :</p><span
+                                                        class="ml-2 mt_1 span_pub">12 Jul
+                                                        2020</span>
+                                                </div>
+                                                <div>
+                                                    <p class="text-right balance_title">Current Balance</p>
+                                                    <p class="text-right balance_detail">$17,000</p>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="d-flex align-items-center pub_spaced mt-xl-0 mt-lg-0 mt-md-2 mt-sm-1 mt-1">
+                                                <span class="d-flex">
+                                                    <p class="pub_headings">Email :</p><span
+                                                        class="ml-1 mt_1 span_pub">ogd@gmail.com</span>
+                                                </span>
+                                                <a href="" class="ml-5 edit_links"><span><img
+                                                            src="assets/images/pub_link_edit.png" alt=""></span>
+                                                    Edit</a>
+                                            </div>
+                                            <div
+                                                class="d-flex align-items-center mt-xl-4 mt-lg-3 mt-md-3 mt-sm-4 mt-3 pub_spaced">
+                                                <span class="d-flex">
+                                                    <p class="pub_headings">Password:</p>
+                                                    <span class="ml-1 mt_1 span_pub">
+                                                        *********
+                                                    </span>
+                                                </span>
+                                                <!-- ==============================================================
+                                                    When clicked, This Button Triggers the reset password modal
+                                                ================================================================ -->
+                                                <a class="ml-5 edit_links" id="myresetBtn"><img
+                                                        src="assets/images/pub_img_refresh.png"> Reset
+                                                    Password
+                                                </a>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-xl-4 mt-lg-3 mt-md-3 mt-sm-4 mt-3">
+                                                <p class="pub_headings">Social:</p>
+                                                <a href="" class="social ml-2"><img src="assets/images/pub_igimg.png"
+                                                        alt=""></a>
+                                                <a href="" class="social ml-2"><img
+                                                        src="assets/images/pub_twitterimg.png" alt=""></a>
+                                                <a href="" class="social ml-2"><img
+                                                        src="assets/images/pub_facebookimg.png" alt=""></a>
+                                                <a href="" class="social ml-2"><img
+                                                        src="assets/images/pub_youtubeimg.png" alt=""></a>
+                                                <a href="" class="ml-5 edit_links pub_add">Add/Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ---------------------------------
+                                Credit Account Form
+                            ---------------------------------- -->
+                            <form id="account_form">
+                                <h2>Bank Details</h2>
+                                <div class="control-group">
+                                    <div class="row text-left">
+                                        <div class="col-sm-12">
+                                            <label><span class="axt">*</span> Account Name :</label>
+                                            <input type="text" class="form-control" id="surname" value=""
+                                                placeholder="Input Name" required>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label><span class="axt">*</span> Account Number :</label>
+                                            <input type="text" class="form-control" id="otherNames"
+                                                placeholder="Enter Card Number" required>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label class="control-label">
+                                                <span class="axt">*</span> Amount :
+                                            </label>
+                                            <div class="input-group position-relative">
+                                                <input type="number" class="form-control" name="email"
+                                                    placeholder="Amount" required>
+                                                <span class="additional_text position-absolute"><a href="">Credit
+                                                        All</a></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-sm-6">
+                                            <label><span class="axt">*</span> Bank Name :</label>
+                                            <input type="text" class="form-control" value=""
+                                                placeholder="Registration Number" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label><span class="axt">*</span> Account Type :</label>
+                                            <input type="select" class="form-control" value=""
+                                                placeholder="Select Bank Option" required>
+                                        </div>
+
+                                        <div class="col-sm-12 mt-xl-5 mt-lg-4 mt-md-4 mt-sm-3 mt-3 d-flex">
+                                            <button type="button" class="btn green_btn" href="">
+                                                <span>
+                                                    <img src="assets/images/pub_credit_img.png" alt="">
+                                                </span> Credit
+                                            </button>
+                                            <button type="button" class="btn no_outlinebtn ml-3">
+                                                <span>
+                                                    <img src="assets/images/pub_imgblock.png" alt="">
+                                                </span> Block
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------------------------------------
+        This is the reset Password Modal
+        The trigger is the <a> reset password </a> in the publisher profile modal
+    ---------------------------------------------------------------------------- -->
+    <div class="reset_modal modal-dialog-centered" id="reset_password_modal">
+        <div class="reset-modal-content">
+            <span class="close_btn1">&times;</span>
+            <div class="modal-header">
+                <h5 class="modal-title m-auto mt-2">Reset Password</h5>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <input type="password" name="" class="form-control mb-2" placeholder="Enter Old Password" required>
+                    <input type="password" name="" class="form-control" placeholder="Enter New Password" required>
+                    <div class="my-2 d-flex">
+                        <button type="button" class="btn pub_reset_button m-auto mr-auto ml-auto">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/publisher-modal.js"></script>
+
+</html>

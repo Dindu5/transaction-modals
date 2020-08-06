@@ -1,0 +1,576 @@
+/* STYLE SHEET FOR: ENVATO WEB : PUBLISHER OVERVIEW */
+
+
+/* =================================================== */
+/* =============== 1. Universal Styles =============== */
+/* =================================================== */
+.publisher_details_card * {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: sans-serif;
+}
+body {
+	scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgb(230, 223, 223);
+}
+
+
+/* =================================================== */
+/* ============== 2. Publisher Details =============== */
+/* =================================================== */
+.publisher_details {
+    width: 100;
+    margin: 0rem 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #c4c4c4;
+}
+.publisher_details_card h2 {
+    color: #000000;
+    font-size: 1.9rem;
+    margin-bottom: 0;
+}
+.no_outlinebtn {
+    background: none;
+    color: #c4302b;
+    display: inline-block;
+    padding: 0rem 2rem;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.title_div {
+    border-bottom: 1px solid #c4c4c4;
+}
+.no_outlinebtn:hover {
+    border: 1px solid #c4302b;
+    color: #c4302b;
+}
+.pub_name {
+    margin: 0;
+    color: #362f74;
+    font-size: 1.6rem;
+}
+.pub_headings {
+    margin: 0;
+    font-size: #362f74;
+    font-size: 1.1rem;
+}
+.balance_title, .balance_detail {
+    margin: 0;
+    font-size: 1.1rem;
+}
+.balance_title {
+    text-decoration: underline;
+    color: #362f74;
+}
+.balance_detail {
+    color: #333333;
+}
+.span_pub {
+    color: #828282;
+    font-size: 1.1rem;
+}
+.edit_links {
+    font-size: 0.9rem;
+    color: #362f74;
+    font-weight: 400;
+}
+.detail_middle {
+    width: 100;
+}
+.pub_details {
+    width: 100%;
+}
+.social img {
+    width: 100%;
+    height: auto;
+} 
+/* Upload Image Styling Form */
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    max-width: 100%;
+    font-size: 0.7rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 4.5rem 2.2rem;
+    border-radius: 5px;
+    min-width: 10rem;
+    /* 10px 20px */
+}
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+/* style 1 */
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-image: url(../images/upload_bgimg.png);
+    background-size: cover;
+    background-position: center;
+}
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
+}
+/* =================================================== */
+/* ================ 3. Account Form ================== */
+/* =================================================== */
+#account_form {
+    margin: 0rem 3rem;
+}
+#account_form label {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-top: 1rem;
+}
+#account_form .form-control {
+    padding: 1.8rem 1.2rem;
+    color: #333333;
+    font-size: 1.1rem;
+    border: 1px solid #c4c4c4 !important;
+    border-radius: 3px !important;
+}
+#account_form .form-control:hover,
+#account_form .form-control:focus,
+#account_form .form-control:active{
+    box-shadow: none !important;
+    border: 1px solid #362f74 !important;
+}
+.green_btn {
+    background: #219653;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.green_btn:hover {
+    background: #177941;
+    color:#ffffff;
+}
+.no_outlinebtn img,
+.green_btn img {
+    margin-top: -3px;
+}
+.axt {
+    color: #c4302b;
+}
+.additional_text {
+    right: 1.2rem;
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.additional_text a {
+    color: #362F74 !important;
+    transition: all 0.6s;
+}
+.additional_text a:hover {
+    color: #120e38;
+    text-decoration: none;
+}
+
+/* ====================================================== */
+/* ============= 3. Credit Account Modal =============== */
+/* ====================================================== */
+
+#credit_account_modal .modal-footer,
+#reset_password_modal .modal-footer{
+    border-top: none !important;
+}
+#credit_account_modal .modal-header,
+#reset_password_modal .modal-header{
+    border-bottom: none !important;
+}
+#credit_account_modal .modal-body,
+#reset_password_modal .modal-body {
+    padding: 0.5rem 2rem;
+}
+#credit_account_modal .form-control,
+#reset_password_modal .form-control {
+    border:none;
+    background: rgba(54, 47, 116, 0.05);
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-sizing: border-box !important;
+    font-size: 0.8rem;
+}
+#credit_account_modal .form-control:hover,
+#reset_password_modal .form-control:hover,
+#credit_account_modal .form-control:focus,
+#reset_password_modal .form-control:focus,
+#credit_account_modal .form-control:active,
+#reset_password_modal .form-control:active {
+    box-shadow: none;
+    background: rgba(34, 28, 83, 0.05);
+
+}
+.pub_reset_button {
+    background: #362F74;
+    color: white;
+    padding: 0.5rem 2rem;
+    transition: all 0.6s;
+}
+.pub_reset_button:hover,
+.pub_reset_button:hover,
+.pub_reset_button:active {
+    background: #1d1847;
+    color: white;
+    
+}
+#reset_password_modal {
+    z-index: 200;
+}
+/* ==== Reset Password Modal ==== */
+.credit_modal,
+.reset_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1900 !important; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.582); /* Black w/ opacity */
+}
+.credit-modal-content,
+.reset-modal-content {
+    background-color: #ffffff;
+    margin: 29vh auto; /* 29vh from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 450px; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+.close_btn2,
+.close_btn1 {
+    color: black;
+    float: right;
+    font-size: 3rem;
+    margin-top: -30px;
+    position: absolute;
+    right: 13px;
+}
+.close {
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+.close_btn2:hover,
+.close_btn2:focus,
+.close_btn1:hover,
+.close_btn1:focus {
+    outline: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+#myresetBtn {
+    cursor: pointer;
+}
+#myresetBtn:hover {
+    color: #362f74;
+}
+
+/* ================================================== */
+/* =============== 4. Media Queries ================= */
+/* ================================================== */
+@media screen and (max-width: 1199px) {
+    .publisher_details {
+        margin: 0rem 2.7rem;
+        margin-bottom: 2.7rem;
+    }
+    .publisher_details_card h2 {
+        font-size: 1.6rem;
+    }
+    .no_outlinebtn {
+        padding: 0rem 1.8rem;
+    }
+    .pub_name {
+        font-size: 1.4rem;
+    }
+    .pub_headings {
+        font-size: 1rem;
+    }
+    .no_outlinebtn img,
+    .green_btn img {
+        width: 1.1rem;
+    }
+    .balance_title, .balance_detail {
+        font-size: 1rem;
+    }
+    .span_pub {
+        font-size: 1rem;
+    }
+    .edit_links {
+        font-size: 0.8rem;
+    }
+    /* Upload Image Styling Form */
+    .inputfile + label {
+        font-size: 0.7rem;
+        /* 20px */
+        font-weight: 400;
+        min-width: 9rem;
+        padding: 4.1rem 1.3rem;
+    }
+    .social {
+        width: 1.2rem;
+    }
+    /* ================ Account Form ================== */
+    #account_form {
+        margin: 0rem 2.7rem;
+    }
+    #account_form label {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+    #account_form .form-control {
+        padding: 1.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    .green_btn {
+        padding: 0.4rem 1.8rem;
+    }
+    .additional_text {
+        right: 1rem;
+        margin-top: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    .detail_middle {
+        flex-direction: column;
+    }
+    .publisher_details_card .card-body{
+        padding: 0.3rem;
+    }
+    .publisher_details {
+        margin: 0rem 0.8rem;
+        margin-bottom: 2rem;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+    }
+    .pub_details {
+        margin: 0 !important;
+    }
+    .pub_spaced {
+        justify-content: space-between !important;
+    }
+    .publisher_details_card h2 {
+        font-size: 1.3rem;
+    }
+    .no_outlinebtn {
+        padding: 0.3rem 1.6rem;
+    }
+    .no_outlinebtn img,
+    .green_btn img {
+        width: 0.9rem;
+    }
+    .pub_name {
+        font-size: 1.3rem;
+    }
+    .pub_headings {
+        font-size: 0.9rem;
+    }
+    .balance_title, .balance_detail {
+        font-size: 0.9rem;
+    }
+    .span_pub {
+        font-size: 0.9rem;
+    }
+    .edit_links {
+        font-size: 0.75rem;
+       
+    }
+    .pub_add {
+        margin-left: auto !important;
+    }
+    /* Upload Image Styling Form */
+    .social {
+        width: 1.3rem;
+    }
+    /* ================ Account Form ================== */
+    #account_form {
+        margin: 0rem 0.8rem;
+    }
+    #account_form label {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+    #account_form .form-control {
+        padding: 1.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    .green_btn {
+        padding: 0.4rem 1.8rem;
+    }
+    .additional_text {
+        right: 1rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    
+    .publisher_details_card .card-body{
+        padding: 0.2rem;
+    }
+    .publisher_details {
+        margin: 0rem 0.7rem;
+        margin-bottom: 1.8rem;
+    }
+    .publisher_details_card h2 {
+        font-size: 1.2rem;
+    }
+    .no_outlinebtn {
+        padding: 0.2rem 1.3rem;
+        font-size: 0.8rem;
+    }
+    .no_outlinebtn img,
+    .green_btn img {
+        width: 0.8rem;
+    }
+    .pub_name {
+        font-size: 1.1rem;
+    }
+    .pub_headings {
+        font-size: 0.8rem;
+    }
+    .balance_title, .balance_detail {
+        font-size: 0.8rem;
+    }
+    .span_pub {
+        font-size: 0.8rem;
+    }
+    .edit_links {
+        font-size: 0.7rem;
+    }
+    /* Upload Image Styling Form */
+    .social {
+        width: 1.2rem;
+    }
+    .inputfile + label {
+        font-size: 0.7rem;
+        padding: 3.4rem 1rem;
+        min-width: 8rem;
+    }
+    /* ================ Account Form ================== */
+    #account_form {
+        margin: 0rem 0.7rem;
+    }
+    #account_form label {
+        font-size: 0.9rem;
+        margin-top: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+    #account_form .form-control {
+        padding: 1.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    .green_btn {
+        padding: 0.3rem 1.3rem;
+        font-size: 0.8rem;
+    }
+    .additional_text {
+        right: 0.8rem;
+        margin-top: 0.7rem;
+        font-size: 0.7rem;
+    }
+    .credit-modal-content,
+    .reset-modal-content {
+        margin: 29vh 5vw; /* 29vh from the top and centered */
+        max-width: 450px; /* Could be more or less, depending on screen size */
+    }
+
+}
+@media screen and (max-width: 375px) {
+    
+    .publisher_details {
+        margin: 0rem 0.7rem;
+        margin-bottom: 1.5rem;
+    }
+    .publisher_details_card h2 {
+        font-size: 1.1rem;
+    }
+    .no_outlinebtn {
+        padding: 0.1rem 1.1rem;
+        font-size: 0.7rem;
+    }
+    .no_outlinebtn img,
+    .green_btn img {
+        width: 0.6rem;
+    }
+    .pub_name {
+        font-size: 1rem;
+    }
+    .pub_headings {
+        font-size: 0.7rem;
+    }
+    .balance_title, .balance_detail {
+        font-size: 0.7rem;
+    }
+    .span_pub {
+        font-size: 0.7rem;
+    }
+    .edit_links {
+        font-size: 0.6rem;
+    }
+    /* Upload Image Styling Form */
+    .social {
+        width: 1rem;
+    }
+    .inputfile + label {
+        font-size: 0.7rem;
+        padding: 3rem 0.8rem;
+        min-width: 6.5rem;
+    }
+    /* ================ Account Form ================== */
+    /*#account_form {
+        margin: 0rem 0.7rem;
+    }*/
+    #account_form label {
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.1rem;
+    }
+    #account_form .form-control {
+        padding: 1.1rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    .green_btn {
+        padding: 0.3rem 1.3rem;
+        font-size: 0.7rem;
+    }
+    .additional_text {
+        right: 0.7rem;
+        margin-top: 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+
