@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <!-- ---------------------------------------------------------------------------
+    <!-- =========================================================================
         Button trigger for the publisher details modal {Add this to the view button}
         data-toggle="modal" data-target="#pub_detail_modal"
         Then copy the Publisher details code
-    ----------------------------------------------------------------------------- -->
+    =============================================================================== -->
     <div class="d-flex">
         <button type="button" class="btn btn-outline-primary mx-auto my-5" data-toggle="modal"
             data-target="#pub_detail_modal">
@@ -23,20 +23,19 @@
     </div>
 
     <h6 class="text-center">When you lauch the modal, click on reset password for reset password modal</h6>
-    <!-- --------------------------------------
+    <!-- =======================================
         Publisher Details Modal Starts Here
-    --------------------------------------- -->
-    <div class="modal fade" id="pub_detail_modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-        aria-hidden="true">
+    ======================================= -->
+    <div class="modal fade" id="pub_detail_modal" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <button type="button" class="close ml-auto mt-2 mr-3" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="modal-body">
-                    <!-- ---------------------------------
+                    <!-- =======================================
                         Publisher Details 
-                    ---------------------------------- -->
+                   ======================================= -->
                     <div class="publisher_details_card">
                         <div class="card-body">
                             <div class="publisher_details pb-3">
@@ -122,9 +121,9 @@
                                 </div>
                             </div>
 
-                            <!-- ---------------------------------
+                            <!-- ================================
                                 Credit Account Form
-                            ---------------------------------- -->
+                            ==================================== -->
                             <form id="account_form">
                                 <h2>Bank Details</h2>
                                 <div class="control-group">
@@ -186,12 +185,11 @@
         </div>
     </div>
 
-
-    <!-- -------------------------------------------------------------------------
+    <!-- ============================================================================
         This is the reset Password Modal
         The trigger is the <a> reset password </a> in the publisher profile modal
-    ---------------------------------------------------------------------------- -->
-    <div class="reset_modal modal-dialog-centered" id="reset_password_modal">
+    ================================================================================= -->
+    <div class="reset_modal" id="reset_password_modal">
         <div class="reset-modal-content">
             <span class="close_btn1">&times;</span>
             <div class="modal-header">
@@ -208,6 +206,7 @@
             </div>
         </div>
     </div>
+
 </body>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/popper.js"></script>
